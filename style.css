@@ -168,6 +168,29 @@ body {
     opacity: 1;
 }
 
+.recipe-button {
+    background: rgba(255, 255, 255, 0.9);
+    color: #11998e;
+    border: none;
+    padding: 10px 25px;
+    font-size: 0.95em;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-button:active {
+    transform: translateY(0);
+}
+
 .footer {
     position: fixed;
     bottom: 0;
