@@ -128,7 +128,7 @@ body {
 
     .container {
         padding: 40px 20px;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 
     .header {
@@ -403,6 +403,7 @@ body {
         flex-direction: column;
         gap: 30px;
         text-align: center;
+        padding: 40px 20px;
     }
 
     .weather-widget {
