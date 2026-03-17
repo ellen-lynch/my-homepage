@@ -407,7 +407,8 @@ body {
     }
 
     .weather-widget {
-        max-width: none;
+        max-width: 100%;
+        width: 100%;
         flex-shrink: auto;
     }
 
