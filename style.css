@@ -44,7 +44,8 @@ body {
 .header {
     margin-bottom: 60px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
     text-align: left;
 }
@@ -162,12 +163,13 @@ body {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 20px;
 }
 
 .gallery-overlay p {
     color: white;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.1em;
+    font-weight: 400;
     margin: 0;
     text-align: center;
 }
