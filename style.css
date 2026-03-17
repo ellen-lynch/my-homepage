@@ -65,6 +65,7 @@ body {
     object-fit: cover;
     border: none;
     display: block;
+    border-radius: 50%;
 }
 
 .title {
