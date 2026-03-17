@@ -43,17 +43,27 @@ body {
 
 .header {
     margin-bottom: 60px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+}
+
+.header .profile-photo {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.header-text {
+    flex: 1;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    margin-bottom: 30px;
     border: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .title {
@@ -62,14 +72,16 @@ body {
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: 700;
+    margin-top: 0;
 }
 
 .subhead {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-weight: 400;
     font-style: italic;
+    margin-top: 0;
 }
 
 .contact-button {
