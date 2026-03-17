@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 25%, #1e90ff 50%, #38ef7d 75%, #11998e 100%);
+    background: linear-gradient(135deg, #6ab08c 0%, rgb(19, 38, 29) 25%, #284b3a 50%, #3d7257 75%, #529975 100%);
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
     min-height: 100vh;
@@ -37,7 +37,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 #133726;
     margin-bottom: 80px;
 }
 
@@ -73,7 +73,7 @@ body {
     font-size: 2.5em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 0;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .contact-button {
     background: white;
-    color: #11998e;
+    color: #284b3a;
     border: none;
     padding: 15px 40px;
     font-size: 1.1em;
@@ -184,22 +184,24 @@ body {
 }
 
 .recipe-button {
-    background: rgba(255, 255, 255, 0.9);
-    color: #11998e;
-    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.6);
     padding: 10px 25px;
     font-size: 0.95em;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
 }
 
 .recipe-button:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: white;
+    transform: translateY(0);
+    box-shadow: none;
 }
 
 .recipe-button:active {
