@@ -6,9 +6,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 25%, #1e90ff 50%, #38ef7d 75%, #11998e 100%);
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease infinite;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,17 +58,19 @@ body {
     margin-right: auto;
 }
 
-h1 {
+.title {
     color: white;
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
 }
 
-p {
+.subhead {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .contact-button {
@@ -98,6 +100,18 @@ p {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gallery-item {
@@ -156,11 +170,11 @@ p {
 
 .footer-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .footer-item {
@@ -176,6 +190,7 @@ p {
 .footer-item p {
     font-size: 0.9em;
     margin: 0;
+    margin-bottom: 8px;
     opacity: 0.9;
 }
 
@@ -188,10 +203,4 @@ p {
 
 .footer-item a:hover {
     opacity: 0.7;
-}
-
-.footer-divider {
-    width: 1px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.3);
 }
