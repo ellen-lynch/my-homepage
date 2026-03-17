@@ -2,7 +2,7 @@
 class WeatherService {
     constructor() {
         this.baseURL = 'https://api.open-meteo.com/v1/forecast';
-        this.defaultLocation = { lat: 47.6062, lon: -122.3321, name: 'Seattle, WA' };
+        this.defaultLocation = { lat: 41.8781, lon: -87.6298, name: 'Chicago, IL' };
     }
 
     async getCurrentWeather(lat, lon) {
