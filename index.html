@@ -16,6 +16,28 @@
             </div>
         </div>
 
+        <div id="weather-widget" class="weather-widget">
+            <div class="weather-header">
+                <h3>Current Weather</h3>
+                <button id="refresh-btn" class="refresh-btn">↻</button>
+            </div>
+            <div class="weather-content">
+                <div id="loading" class="loading">Loading weather...</div>
+                <div id="weather-data" class="weather-data" style="display: none;">
+                    <div class="location" id="location">--</div>
+                    <div class="temperature" id="temperature">--°</div>
+                    <div class="conditions" id="conditions">--</div>
+                    <div class="details">
+                        <span id="wind">Wind: --</span>
+                        <span id="humidity">Humidity: --%</span>
+                    </div>
+                </div>
+                <div id="error" class="error" style="display: none;">
+                    Unable to load weather data
+                </div>
+            </div>
+        </div>
+
         <div class="gallery">
             <div class="gallery-item">
                 <div class="gallery-image-wrapper">

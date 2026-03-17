@@ -272,3 +272,92 @@ body {
 .footer-content a:hover {
     opacity: 0.7;
 }
+
+/* Weather Widget Styles */
+.weather-widget {
+    max-width: 320px;
+    margin: 20px auto;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.1);
+}
+
+.weather-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.refresh-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.refresh-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.weather-content {
+    padding: 20px;
+}
+
+.temperature {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.location {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.conditions {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+}
+
+.error {
+    color: #ffcccb;
+}
+
+@media (max-width: 480px) {
+    .weather-widget {
+        margin: 10px;
+        max-width: none;
+    }
+}
