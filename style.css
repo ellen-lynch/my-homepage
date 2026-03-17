@@ -280,6 +280,7 @@ body {
     align-items: center;
     padding: 0;
     margin-bottom: 80px;
+    width: 100%;
 }
 
 .weather-container {
@@ -293,6 +294,7 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .weather-widget {
@@ -301,7 +303,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     color: white;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 #133726;
     overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     flex-shrink: 0;
