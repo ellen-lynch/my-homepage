@@ -159,5 +159,21 @@
             <a href="mailto:lynch.ellen@slalom.com">lynch.ellen@slalom.com</a>
         </div>
     </footer>
+
+    <!-- Step 3.1: Initialize Weather Widget -->
+    <script src="weather.js"></script>
+    <script>
+        // Initialize weather widget when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            window.weatherWidget = new WeatherWidget();
+        });
+
+        // Clean up on page unload
+        window.addEventListener('beforeunload', () => {
+            if (window.weatherWidget) {
+                window.weatherWidget.destroy();
+            }
+        });
+    </script>
 </body>
 </html>
