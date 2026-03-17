@@ -423,7 +423,7 @@ body {
 
 @media (max-width: 480px) {
     .weather-section {
-        padding: 20px;
+        padding: 0;
         margin-bottom: 100px;
     }
 
